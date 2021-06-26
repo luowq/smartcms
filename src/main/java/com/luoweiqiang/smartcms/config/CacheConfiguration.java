@@ -81,6 +81,18 @@ public class CacheConfiguration {
             createCache(cm, com.luoweiqiang.smartcms.domain.User.class.getName(), jcacheConfiguration);
             createCache(cm, com.luoweiqiang.smartcms.domain.Authority.class.getName(), jcacheConfiguration);
             createCache(cm, com.luoweiqiang.smartcms.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            createCache(cm, com.luoweiqiang.smartcms.domain.Region.class.getName(), jcacheConfiguration);
+            createCache(cm, com.luoweiqiang.smartcms.domain.Country.class.getName(), jcacheConfiguration);
+            createCache(cm, com.luoweiqiang.smartcms.domain.Location.class.getName(), jcacheConfiguration);
+            createCache(cm, com.luoweiqiang.smartcms.domain.Department.class.getName(), jcacheConfiguration);
+            createCache(cm, com.luoweiqiang.smartcms.domain.Department.class.getName() + ".employees", jcacheConfiguration);
+            createCache(cm, com.luoweiqiang.smartcms.domain.Task.class.getName(), jcacheConfiguration);
+            createCache(cm, com.luoweiqiang.smartcms.domain.Task.class.getName() + ".jobs", jcacheConfiguration);
+            createCache(cm, com.luoweiqiang.smartcms.domain.Employee.class.getName(), jcacheConfiguration);
+            createCache(cm, com.luoweiqiang.smartcms.domain.Employee.class.getName() + ".jobs", jcacheConfiguration);
+            createCache(cm, com.luoweiqiang.smartcms.domain.Job.class.getName(), jcacheConfiguration);
+            createCache(cm, com.luoweiqiang.smartcms.domain.Job.class.getName() + ".tasks", jcacheConfiguration);
+            createCache(cm, com.luoweiqiang.smartcms.domain.JobHistory.class.getName(), jcacheConfiguration);
             // jhipster-needle-redis-add-entry
         };
     }
